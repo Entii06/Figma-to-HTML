@@ -57,6 +57,24 @@ a {
   cursor: pointer;
   opacity: 0.8;
 }
+
+/* giới hạn khi text quá dài */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  overflow: hidden;
+}
+
+/* có đồng thời 2 class */
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+
+/* break all để xuống dòng khi quá dài nếu không có khoảng trắng */
+.break-all {
+  word-break: break-all;
+}
 /* ==============HEADER============== */
 .header {
   background: #fffcf4;
@@ -330,6 +348,8 @@ a {
 }
 
 .popular .course-item {
+  /* giúp các item bằng nhau */
+  flex: 1;
   border-radius: 12px;
   border: 1px solid #e2dfda;
   background: #e2dfda;
