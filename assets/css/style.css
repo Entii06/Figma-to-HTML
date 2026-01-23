@@ -60,10 +60,10 @@ a {
 
 /* giới hạn khi text quá dài */
 .line-clamp {
-  display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: var(--line-clamp, 1);
-  overflow: hidden;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  display: -webkit-box;
 }
 
 /* có đồng thời 2 class */
