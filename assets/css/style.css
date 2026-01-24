@@ -429,6 +429,11 @@ a {
 }
 
 /* ============== FEEDBACK ============== */
+.feedback-list {
+  display: flex;
+  overflow: hidden;
+}
+
 .feedback {
   margin-top: 135px;
   padding: 96px 0;
@@ -436,7 +441,9 @@ a {
 }
 
 .feedback .feedback-item {
+  width: 100%;
   display: flex;
+  flex-shrink: 0;
 }
 
 .feedback-item .avatar {
